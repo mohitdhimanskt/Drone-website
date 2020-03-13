@@ -12,15 +12,15 @@ header {
  section h2{
      color:blueviolet;
  }
- section{
-    width: 90%;
+  .gridfloat{
+   width: 90%;
     margin: 0 auto;
     padding-left: 0px;
-    clear: both;
+    clear:both;
 }
  /*grid-item*/
 .grid-item {
-    width: 29%;
+width: 29%;
 float: left;
 border: 1px solid
 #ccc;
@@ -38,24 +38,58 @@ display: inline;
  .grid-item p{
      text-align: justify;
  }
- 
+ /* grid-flexbox*/
+ .grid-flexbox{
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 0px;
+     clear:both; 
+}
+/*section*/
+section h2{
+    color:blueviolet;
+}
+section {
+display:inline-block;
+}
+/*grid-item*/
+.grid-item {
+    width: 29%;
+    float: left;
+    border: 1px solid
+    #ccc;
+    padding: 10px;
+    margin: 10px;
+    min-height: 500px;
+    display: inline;
+    }
+     .grid-item h3{
+        text-align: left;
+     }
+     .grid-item img{
+         width:100%;
+     }
+     .grid-item p{
+         text-align: justify;
+     }
+
 /*media queries */
 
 /*Mobile Query*/
 @media only screen and (max-width:600px) {
    .grid-item {
-    width:94%;
+    width:72%;
     }
 }
 
 /*Tablet Query*/
 @media only screen and (min-width:600px) and (max-width:1024px) {
      .grid-item{
-        width: 26.3%;
+        width: 25.3%;
      }
         }
 /*Desktop Query*/
-@media only screen and (min-width: 1024)and (max-width:up) { 
+@media only screen and (max-width: 1024) { 
     .grid-item{
      width:25%    
     }
